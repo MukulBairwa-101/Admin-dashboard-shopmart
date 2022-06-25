@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lato&family=Ubuntu&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* global */
+
+:root{
+    --banner-bg:rgb(12, 12, 12);
+    --teal-text:rgb(13, 153, 139);
+}
+h1{
+    font-size:36px;
+}
+h2{
+    font-size:28px;
+}
+h3{
+    font-size:20px;
+}
+h4{
+    font-size:16px;
+}
+h5{
+    font-size:12px;
+}
+p{
+    font-size:16px;
+}
+span{
+    font-size:16px;
+}
+.flex{
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-center{
+    margin:5px auto;
+    text-align: center;
+
+}
+/* color-text */
+.highlighted-text{
+    color:var(--teal-text);
+}
+.white-text{
+    color:#fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+/* allignmet */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-banner{
+    background-color:var(--banner-bg);
+    margin:0px auto;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight:800;
+    color:#fff;
+    padding:80px
 }
