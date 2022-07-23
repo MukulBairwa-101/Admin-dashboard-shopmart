@@ -2,10 +2,8 @@ import React from 'react'
 
 const Logo = () => {
     return (
-        <div>
-
-        <span>SHOPMART</span>    
-
+        <div >
+                <img src="/logo.jpg" alt="logo" className="shopmart-logo" />
         </div>
     )
 }

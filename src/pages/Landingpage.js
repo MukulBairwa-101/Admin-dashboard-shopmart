@@ -1,10 +1,12 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import {useNavigate} from "react-router-dom";
 // components
 import Logo from "../Reusables/Logo";
 
 const Landingpage = () => {
+    const navigate = useNavigate();
 
     useEffect(() =>{
         AOS.init({
@@ -14,6 +16,11 @@ const Landingpage = () => {
 			offset:100
 		});
     },[])
+
+    const handleRoute = (path)=>{
+        // alert(`${path}`,'getting path')
+        navigate(`/admin/${path}`);
+    }
 
 
 
@@ -25,6 +32,9 @@ const Landingpage = () => {
             <div data-aos="zoom-out" className="text-center">
                 <h1 className="highlighted-text"> Admin <span className="white-text"> panel</span> </h1>
                 <Logo />
+            <div className="m-20">
+                <button className="pointer btn btn-signup" onClick={()=>handleRoute('signin')}>Sign In</button>
+            </div>
             </div>
             </div>
         </div>
